@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Center a div</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .parent {
+        width: 100%;
+        height: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: aquamarine;
+      }
+      .child {
+        width: 400px;
+        height: 200px;
+        background-color: aqua;
+      }
+      .parent-with-grid {
+        width: 100%;
+        height: 1000px;
+        display: grid;
+        place-items: center;
+        background-color: yellow;
+      }
+      .child-pic {
+        width: 400px;
+        height: 200px;
+        background-color: black;
+      }
+      .parentdb {
+        display: flex;
+        width: 100%;
+        height: 1000px;
+        background-color: rebeccapurple;
+      }
+      .child-ma {
+        display: block;
+        margin: auto auto;
+        width: 400px;
+        height: 200px;
+        background-color: red;
+      }
+      .parent-pr {
+        position: relative;
+        width: 100%;
+        height: 1000px;
+        background-color: purple;
+      }
+      .child-pa {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: pink;
+        width: 400px;
+        height: 200px;
+        transform: translate(-50%, -50%);
+      }
+      .parent-dg {
+        width: 100%;
+        height: 800px;
+        background-color: blueviolet;
+        display: grid;
+      }
+
+      .child-mA {
+        width: 400px;
+        height: 200px;
+        background-color: blue;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="parent">
+      <div class="child"></div>
+    </section>
+    <section class="parent-with-grid">
+      <div class="child-pic"></div>
+    </section>
+    <section class="parentdb">
+      <div class="child-ma"></div>
+    </section>
+    <section class="parent-pr">
+      <div class="child-pa"></div>
+    </section>
+    <section class="parent-dg">
+      <div class="child-mA"></div>
+    </section>
+  </body>
+</html>
